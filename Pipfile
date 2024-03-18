@@ -14,9 +14,6 @@ numpy = "*"
 matplotlib = "*"
 scikit-learn = "*"
 simpful = "*"
-torch = {version = "*", index = "downloadpytorch"}
-torchvision = {version = "*", index = "downloadpytorch"}
-torchaudio = {version = "*", index = "downloadpytorch"}
 
 [requires]
 python_version = "3.11"
