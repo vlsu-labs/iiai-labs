@@ -3,11 +3,20 @@ url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+name = "downloadpytorch"
+url = "https://download.pytorch.org/whl/cu118"
+verify_ssl = false
+
 [packages]
 ipykernel = "*"
 numpy = "*"
 matplotlib = "*"
-
+scikit-learn = "*"
+simpful = "*"
+torch = {version = "*", index = "downloadpytorch"}
+torchvision = {version = "*", index = "downloadpytorch"}
+torchaudio = {version = "*", index = "downloadpytorch"}
 
 [requires]
 python_version = "3.11"
